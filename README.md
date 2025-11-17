@@ -24,17 +24,17 @@ By the end of this journey, you'll understand:
 Think of this as the guide that connects interview problems to real-world systems!
 
 ## 📋 Our Roadmap
+1. [🤔 The "Why" Behind LRU Cache](#the-why-behind-lru-cache)
+2. [🧠 The Wrong Way to Think (And Why We All Start There)](#the-wrong-way-to-think-and-why-we-all-start-there)
+3. [💡 The "Aha!" Moment (How to Actually Think About This)](#the-aha-moment-how-to-actually-think-about-this)
+4. [🏗️ Building Our Solution Step by Step](#building-our-solution-step-by-step)
+5. [🔍 Walking Through the Code (Like a Debugger)](#walking-through-the-code-like-a-debugger)
+6. [⚡ Edge Cases That Actually Matter](#edge-cases-that-actually-matter)
+7. [🎨 Visualizing the Flow](#visualizing-the-flow)
+8. [🚀 How This Powers Real Systems](#how-this-powers-real-systems)
+9. [📝 Complete Implementation](#complete-implementation)
+10. [✨ Key Takeaways](#key-takeaways)
 
-1. [🤔 The "Why" Behind LRU Cache](#why-lru)
-2. [🧠 The Wrong Way to Think (And Why We All Start There)](#wrong-approach)
-3. [💡 The "Aha!" Moment (How to Actually Think About This)](#aha-moment)
-4. [🏗️ Building Our Solution Step by Step](#building-solution)
-5. [🔍 Walking Through the Code (Like a Debugger)](#code-walkthrough)
-6. [⚡ Edge Cases That Actually Matter](#edge-cases)
-7. [🎨 Visualizing the Flow](#visualization)
-8. [🚀 How This Powers Real Systems](#real-world)
-9. [📝 Complete Implementation](#implementation)
-10. [✨ Key Takeaways](#takeaways)
 
 ---
 

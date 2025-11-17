@@ -24,21 +24,50 @@ By the end of this journey, you'll understand:
 Think of this as the guide that connects interview problems to real-world systems!
 
 ## 📋 Our Roadmap
-1. [🤔 The "Why" Behind LRU Cache](#-the-why-behind-lru-cache)
-2. [🧠 The Wrong Way to Think (And Why We All Start There)](#-the-wrong-way-to-think-and-why-we-all-start-there)
-3. [💡 The "Aha!" Moment (How to Actually Think About This)](#-the-aha-moment-how-to-actually-think-about-this)
-4. [🏗️ Building Our Solution Step by Step](#-building-our-solution-step-by-step)
-5. [🔍 Walking Through the Code (Like a Debugger)](#-walking-through-the-code-like-a-debugger)
-6. [⚡ Edge Cases That Actually Matter](#-edge-cases-that-actually-matter)
-7. [🎨 Visualizing the Flow](#-visualizing-the-flow)
-8. [🚀 How This Powers Real Systems](#-how-this-powers-real-systems)
-9. [📝 Complete Implementation](#-complete-implementation)
-10. [✨ Key Takeaways](#-key-takeaways)
+
+<p align="center">
+  <a href="#why-lru">
+    <img src="https://img.shields.io/badge/01-Why_LRU_Cache-1f6feb?style=for-the-badge" />
+  </a>
+  <a href="#wrong-way">
+    <img src="https://img.shields.io/badge/02-Wrong_Way_to_Think-ff7b72?style=for-the-badge" />
+  </a>
+  <a href="#aha">
+    <img src="https://img.shields.io/badge/03-The_Aha_Moment-f9c513?style=for-the-badge" />
+  </a>
+  <a href="#building">
+    <img src="https://img.shields.io/badge/04-Building_the_Solution-3fb950?style=for-the-badge" />
+  </a>
+  <a href="#walkthrough">
+    <img src="https://img.shields.io/badge/05-Code_Walkthrough-58a6ff?style=for-the-badge" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="#edge-cases">
+    <img src="https://img.shields.io/badge/06-Edge_Cases-dd544e?style=for-the-badge" />
+  </a>
+  <a href="#visual">
+    <img src="https://img.shields.io/badge/07-Visualization-8957e5?style=for-the-badge" />
+  </a>
+  <a href="#real-systems">
+    <img src="https://img.shields.io/badge/08-Real_World_Systems-1f883d?style=for-the-badge" />
+  </a>
+  <a href="#implementation">
+    <img src="https://img.shields.io/badge/09-Implementation-0f766e?style=for-the-badge" />
+  </a>
+  <a href="#takeaways">
+    <img src="https://img.shields.io/badge/10-Key_Takeaways-e11d48?style=for-the-badge" />
+  </a>
+</p>
+
+
 
 
 ---
 
-## 🤔 The "Why" Behind LRU Cache {#why-lru}
+## 🤔 The "Why" Behind LRU Cache
+<a id="why-lru"></a>
 
 Before we write a single line of code, let's talk about why this problem exists.
 
@@ -68,8 +97,8 @@ When you understand LRU Cache, you understand how half the internet stays fast.
 
 ---
 
-## 🧠 The Wrong Way to Think (And Why We All Start There) {#wrong-approach}
-
+## 🧠 The Wrong Way to Think (And Why We All Start There)
+<a id="wrong-way"></a>
 Let me show you how most people (including past me) approach this problem.
 
 **The problem statement:**
@@ -105,7 +134,8 @@ Your cache is now slower than just fetching from the server. 💀
 
 ---
 
-## 💡 The "Aha!" Moment (How to Actually Think About This) {#aha-moment}
+## 💡 The "Aha!" Moment (How to Actually Think About This)
+<a id="aha"></a>
 
 Let's step back and think about what we ACTUALLY need.
 
@@ -179,8 +209,8 @@ Now:
 
 ---
 
-## 🏗️ Building Our Solution Step by Step {#building-solution}
-
+## 🏗️ Building Our Solution Step by Step
+<a id="building"></a>
 Now let's build this thing together. We'll start with the fundamentals and work our way up.
 
 ### Step 1: Why Doubly Linked? Why Not Singly Linked?
@@ -476,7 +506,8 @@ Create the new node, add to front (it's the most recent by definition), and stor
 
 ---
 
-## 🔍 Walking Through the Code (Like a Debugger) {#code-walkthrough}
+## 🔍 Walking Through the Code (Like a Debugger)
+<a id="walkthrough"></a>
 
 Let's trace through a complete example. Grab a piece of paper if you can - drawing this out helps immensely.
 
@@ -542,7 +573,8 @@ Every operation maintains the invariant: most recent at front, least recent at b
 
 ---
 
-## ⚡ Edge Cases That Actually Matter {#edge-cases}
+## ⚡ Edge Cases That Actually Matter
+<a id="edge-cases"></a>
 
 Let's talk about the edge cases that actually come up in interviews and production.
 
@@ -637,7 +669,8 @@ moveToFront(existingNode);  // Refresh position
 
 ---
 
-## 🎨 Visualizing the Flow {#visualization}
+## 🎨 Visualizing the Flow
+<a id="visual"></a>
 
 Let's visualize what happens over time with `capacity = 3`:
 
@@ -679,7 +712,8 @@ The list is always sorted by recency without any explicit sorting. Accessing an 
 
 ---
 
-## 🚀 How This Powers Real Systems {#real-world}
+## 🚀 How This Powers Real Systems
+<a id="real-systems"></a>
 
 This isn't just a LeetCode problem. This exact pattern shows up everywhere in production systems.
 
@@ -718,7 +752,8 @@ Limited storage + Frequent access + Need for speed = LRU Cache
 
 ---
 
-## 📝 Complete Implementation {#implementation}
+## 📝 Complete Implementation
+<a id="implementation"></a>
 
 Here's the complete, production-ready code with all the pieces together:
 
@@ -850,7 +885,8 @@ We're using raw pointers and manual memory management. In production C++, you'd 
 
 ---
 
-## ✨ Key Takeaways {#takeaways}
+## ✨ Key Takeaways
+<a id="takeaways"></a>
 
 If you remember only a few things from this guide, make them these:
 
